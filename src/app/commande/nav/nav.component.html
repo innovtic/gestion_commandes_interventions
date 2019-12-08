@@ -1,0 +1,221 @@
+<div id="heroListContent">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1>Liste des commandes</h1>
+    </div>
+  </div>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th></th>
+      <th>Id commande</th>
+      <th>Nom client</th>
+      <th>Typologie</th>
+      <th>STIT</th>
+      <th>Type réseau</th>
+    </tr>
+    </thead>
+    <tbody>
+  <tr *ngFor="let char of listeCommande">
+    <td></td>
+    <td>{{char.id}}</td>
+    <td>{{char.nomClien}}</td>
+    <td>{{char.typo}}</td>
+    <td>{{char.stit}}</td>
+    <td>{{char.typeReau}}</td>
+  </tr>
+    </tbody>
+    <!--<thead>
+    <tr>
+      <th></th>
+      <th>Id commande</th>
+      <th>Nom client</th>
+      <th>Typologie</th>
+      <th>STIT</th>
+      <th>Type réseau</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-primary">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-secondary btn-sm">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-secondary btn-sm">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-secondary btn-sm">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-secondary btn-sm">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-secondary btn-sm">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-secondary btn-sm">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-secondary btn-sm">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-secondary btn-sm">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-secondary btn-sm">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-secondary btn-sm">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+    <tr >
+      <td>
+        <div class="btn-group">
+          <button routerLink="/heroes/detail/" class="btn btn-secondary btn-sm">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </td>
+      <td>1000
+      </td>
+      <td>TEST</td>
+      <td>Popé</td>
+      <td>ERT</td>
+      <td>SFR</td>
+    </tr>
+  </tbody>-->
+  </table>
+</div>

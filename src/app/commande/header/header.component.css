@@ -1,0 +1,23 @@
+:host>div {
+  background-color: #C4151C;
+  color: whitesmoke;
+  height: 56px;
+  min-height: 56px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.24);
+}
+
+a {
+  color: cyan;
+}
+
+/*img {
+  height: 100%;
+}*/
+.header {
+  padding-top: 10px;
+}
+
+.headercss {
+  background-color: #C4151C;
+  padding-left: 0px;
+}

@@ -1,0 +1,25 @@
+<div class="row h-100 justify-content-center align-items-center">
+  <div class="col-md-4 offset-md-0">
+    <div class="card border-danger mb-5 text-white" style="background-color: #C4151C">
+      <div class="card-body">
+        <div class="login-wrapper">
+          <h3>Page d'authentification</h3>
+          <p></p>
+          <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate class="form-horizontal">
+            <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+              <label for="username">Identifiant</label>
+              <input type="text" class="form-control" name="username" id="username" [(ngModel)]="model.username" #username="ngModel" placeholder='Saisissez votre identifiant' required />
+            </div>
+            <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+              <label for="password">Mot de passe</label>
+              <input type="password" class="form-control" name="password" id="password" [(ngModel)]="model.password" #password="ngModel" placeholder='Saisissez votre mot de passe' required />
+            </div>
+            <div class="form-group">
+              <button class="btn btn-dark pull-right" [disabled]="!f.form.valid">Connexion</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
